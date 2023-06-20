@@ -17,9 +17,11 @@ from PIL import Image
 
 image = Image.open('Yog.jpg')
 
-st.image(image, caption='Sun')
+
 
 st.title(" Yogi GPT ")
+st.image(image)
+
 st.markdown("Yogi GPT will hear your emotional concern and provide possitive affirmations to console you.")
 st.markdown("Your disturbed chakra is identified and suitable meditation & yoga is suggested for your recovery")
 
