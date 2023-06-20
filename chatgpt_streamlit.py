@@ -15,7 +15,7 @@ import openai
 openai.api_key = st.secrets["pass"]
 from PIL import Image
 
-image = Image.open('/yogi.jpg')
+image = Image.open('Yog.jpg')
 
 st.image(image, caption='Sun')
 
