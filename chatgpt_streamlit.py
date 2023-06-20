@@ -15,9 +15,9 @@ import openai
 #from dotenv import load_dotenv, find_dotenv
 #_ = load_dotenv(find_dotenv())
 
-openai.api_key  = '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'
+#openai.api_key  = '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'
 
-
+openai.api_key = st.secrets["pass"]
 
 
 
