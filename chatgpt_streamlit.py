@@ -13,6 +13,11 @@ import base64
 import openai
 
 openai.api_key = st.secrets["pass"]
+from PIL import Image
+
+image = Image.open('/yogi.jpg')
+
+st.image(image, caption='Sun')
 
 st.title(" Yogi GPT ")
 st.markdown("Yogi GPT will hear your emotional concern and provide possitive affirmations to console you.")
