@@ -12,23 +12,14 @@ import streamlit as st
 import base64
 import openai
 
-#from dotenv import load_dotenv, find_dotenv
-#_ = load_dotenv(find_dotenv())
-
-
 openai.api_key = st.secrets["pass"]
 
-
-
-
-
 st.title(" Yogi GPT ")
-
+st.markdown("Yogi GPT will hear your emotional concern and provide possitive affirmations to console you.")
+st.markdown("Your disturbed chakra is identified and suitable meditation & yoga is suggested for your recovery")
 
 text = st.text_area('Enter your concern child :')
 
-
-#text = "My girl friend just broke up with me, I am feeling worthless and afraid of being single for life"
 
 prompt_2 = f"""
     Your task is to perform the following actions:
@@ -56,11 +47,6 @@ prompt_2 = f"""
     4 - suggest 3 (easy, moderate and difficult) yoga poses for strengthening the affected chakra
     
     Text: <{text}> """
-
-
-
-
-
 
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
