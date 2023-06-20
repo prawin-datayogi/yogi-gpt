@@ -74,6 +74,10 @@ else:
     st.write('Your Resolutions will appear here')
 
 
+st.write("Created by Prawin Raja. Connect with me [here](https://www.linkedin.com/in/prawinrajae/)")
+
+
+
 
 
 
